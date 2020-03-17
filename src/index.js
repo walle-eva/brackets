@@ -2,8 +2,8 @@ module.exports = function check(str, bracketsConfig) {
   let br = '[](){}';
 	let st = [];
 	
-	for(let i = 0; i < bracketsConfig.length; i++){
-	  let ch = bracketsConfig[i];
+	for(let i = 0; i < str.length; i++){
+	  let ch = str[i];
 	  let ind = br.indexOf(ch);
 	  if(ind >= 0){
 	    if(ind & 1){
